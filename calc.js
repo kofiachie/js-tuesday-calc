@@ -46,6 +46,9 @@ $(document).ready(function() {
     } else {
       operationQueue.push(value);
     }
+     if(value === "C"){
+      operationQueue = [];
+    }
     $( '#ops-queue' ).html(operationQueue);
   });
 });
